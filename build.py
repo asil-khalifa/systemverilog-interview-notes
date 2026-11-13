@@ -162,7 +162,14 @@ def make_renderer(example_dir):
             out += '<p class="outlabel">Expected output</p>'
         return out + f'<pre class="{cls}"><code>{body}</code></pre>\n'
 
-    return MarkdownIt("commonmark", {"highlight": render_code}).enable("table")
+    def fence(renderer, tokens, idx, options, env):
+        token = tokens[idx]
+        lang, _, attrs = token.info.strip().partition(" ")
+        return render_code(token.content, lang, attrs)
+
+    md = MarkdownIt("commonmark").enable("table")
+    md.add_render_rule("fence", fence)
+    return md
 
 
 def post_process(body):
@@ -178,6 +185,9 @@ def post_process(body):
             toc.append((level, hid, re.sub(r"<[^>]+>", "", inner)))
         return f'<h{level} id="{hid}">{inner}</h{level}>'
 
+    # A paragraph that is entirely bold is a lead-in label: make it a heading
+    # so that it is never left alone at the bottom of a page.
+    body = re.sub(r"<p><strong>([^<]{1,80})</strong></p>", r"<h4>\1</h4>", body)
     body = re.sub(r"<h([1-4])>(.*?)</h\1>", heading, body, flags=re.S)
 
     def callout(m):
