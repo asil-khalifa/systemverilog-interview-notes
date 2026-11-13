@@ -10,9 +10,9 @@ Detailed study notes for SystemVerilog interviews for VLSI Design Verification r
 | 2 | Arrays and Array Operations | not written yet |
 | 3 | Tasks, Functions and Procedural Concepts | [SystemVerilog_Module_03_Tasks_Functions_Procedural.pdf](pdf/SystemVerilog_Module_03_Tasks_Functions_Procedural.pdf) |
 | 4 | Classes and Object-Oriented Programming | [SystemVerilog_Module_04_Classes_and_OOP.pdf](pdf/SystemVerilog_Module_04_Classes_and_OOP.pdf) |
-| 5 | Randomization and Constraints | not written yet |
+| 5 | Randomization and Constraints | [SystemVerilog_Module_05_Randomization_and_Constraints.pdf](pdf/SystemVerilog_Module_05_Randomization_and_Constraints.pdf) |
 | 6 | Transaction Classes and Verification Planning | [SystemVerilog_Module_06_Transactions_and_Verification_Planning.pdf](pdf/SystemVerilog_Module_06_Transactions_and_Verification_Planning.pdf) |
-| 7 | Inter-Process Communication and Synchronization | not written yet |
+| 7 | Inter-Process Communication and Synchronization | [SystemVerilog_Module_07_IPC_and_Synchronization.pdf](pdf/SystemVerilog_Module_07_IPC_and_Synchronization.pdf) |
 | 8 | Interfaces and Modports | [SystemVerilog_Module_08_Interfaces_and_Modports.pdf](pdf/SystemVerilog_Module_08_Interfaces_and_Modports.pdf) |
 | 9 | Layered Testbench Architecture | [SystemVerilog_Module_09_Layered_Testbench.pdf](pdf/SystemVerilog_Module_09_Layered_Testbench.pdf) |
 | 10 | Functional Coverage and Assertions | not written yet |
