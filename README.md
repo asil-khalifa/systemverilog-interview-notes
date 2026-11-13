@@ -14,9 +14,9 @@ Detailed study notes for SystemVerilog interviews for VLSI Design Verification r
 | 6 | Transaction Classes and Verification Planning | [SystemVerilog_Module_06_Transactions_and_Verification_Planning.pdf](pdf/SystemVerilog_Module_06_Transactions_and_Verification_Planning.pdf) |
 | 7 | Inter-Process Communication and Synchronization | not written yet |
 | 8 | Interfaces and Modports | [SystemVerilog_Module_08_Interfaces_and_Modports.pdf](pdf/SystemVerilog_Module_08_Interfaces_and_Modports.pdf) |
-| 9 | Layered Testbench Architecture | not written yet |
+| 9 | Layered Testbench Architecture | [SystemVerilog_Module_09_Layered_Testbench.pdf](pdf/SystemVerilog_Module_09_Layered_Testbench.pdf) |
 | 10 | Functional Coverage and Assertions | not written yet |
-| 11 | Packages, Advanced Concepts and UVM Introduction | not written yet |
+| 11 | Packages, Advanced Concepts and UVM Introduction | [SystemVerilog_Module_11_Packages_Advanced_UVM_Intro.pdf](pdf/SystemVerilog_Module_11_Packages_Advanced_UVM_Intro.pdf) |
 | | Final interview preparation (150+ questions) | [SystemVerilog_Module_12_Final_Interview_Preparation.pdf](pdf/SystemVerilog_Module_12_Final_Interview_Preparation.pdf) |
 
 To download a PDF, open it on GitHub and use the download button at the top right of the viewer.
