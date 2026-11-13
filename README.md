@@ -8,8 +8,8 @@ Detailed study notes for SystemVerilog interviews for VLSI Design Verification r
 |---|---|---|
 | 1 | SystemVerilog Fundamentals and Data Types | [SystemVerilog_Module_01_Fundamentals_and_Data_Types.pdf](pdf/SystemVerilog_Module_01_Fundamentals_and_Data_Types.pdf) |
 | 2 | Arrays and Array Operations | not written yet |
-| 3 | Tasks, Functions and Procedural Concepts | not written yet |
-| 4 | Classes and Object-Oriented Programming | not written yet |
+| 3 | Tasks, Functions and Procedural Concepts | [SystemVerilog_Module_03_Tasks_Functions_Procedural.pdf](pdf/SystemVerilog_Module_03_Tasks_Functions_Procedural.pdf) |
+| 4 | Classes and Object-Oriented Programming | [SystemVerilog_Module_04_Classes_and_OOP.pdf](pdf/SystemVerilog_Module_04_Classes_and_OOP.pdf) |
 | 5 | Randomization and Constraints | not written yet |
 | 6 | Transaction Classes and Verification Planning | not written yet |
 | 7 | Inter-Process Communication and Synchronization | not written yet |
