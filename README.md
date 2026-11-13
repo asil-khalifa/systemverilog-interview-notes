@@ -15,7 +15,7 @@ Detailed study notes for SystemVerilog interviews for VLSI Design Verification r
 | 7 | Inter-Process Communication and Synchronization | [SystemVerilog_Module_07_IPC_and_Synchronization.pdf](pdf/SystemVerilog_Module_07_IPC_and_Synchronization.pdf) |
 | 8 | Interfaces and Modports | [SystemVerilog_Module_08_Interfaces_and_Modports.pdf](pdf/SystemVerilog_Module_08_Interfaces_and_Modports.pdf) |
 | 9 | Layered Testbench Architecture | [SystemVerilog_Module_09_Layered_Testbench.pdf](pdf/SystemVerilog_Module_09_Layered_Testbench.pdf) |
-| 10 | Functional Coverage and Assertions | not written yet |
+| 10 | Functional Coverage and Assertions | [SystemVerilog_Module_10_Coverage_and_Assertions.pdf](pdf/SystemVerilog_Module_10_Coverage_and_Assertions.pdf) |
 | 11 | Packages, Advanced Concepts and UVM Introduction | [SystemVerilog_Module_11_Packages_Advanced_UVM_Intro.pdf](pdf/SystemVerilog_Module_11_Packages_Advanced_UVM_Intro.pdf) |
 | | Final interview preparation (150+ questions) | [SystemVerilog_Module_12_Final_Interview_Preparation.pdf](pdf/SystemVerilog_Module_12_Final_Interview_Preparation.pdf) |
 
