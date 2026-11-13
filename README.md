@@ -11,9 +11,9 @@ Detailed study notes for SystemVerilog interviews for VLSI Design Verification r
 | 3 | Tasks, Functions and Procedural Concepts | [SystemVerilog_Module_03_Tasks_Functions_Procedural.pdf](pdf/SystemVerilog_Module_03_Tasks_Functions_Procedural.pdf) |
 | 4 | Classes and Object-Oriented Programming | [SystemVerilog_Module_04_Classes_and_OOP.pdf](pdf/SystemVerilog_Module_04_Classes_and_OOP.pdf) |
 | 5 | Randomization and Constraints | not written yet |
-| 6 | Transaction Classes and Verification Planning | not written yet |
+| 6 | Transaction Classes and Verification Planning | [SystemVerilog_Module_06_Transactions_and_Verification_Planning.pdf](pdf/SystemVerilog_Module_06_Transactions_and_Verification_Planning.pdf) |
 | 7 | Inter-Process Communication and Synchronization | not written yet |
-| 8 | Interfaces and Modports | not written yet |
+| 8 | Interfaces and Modports | [SystemVerilog_Module_08_Interfaces_and_Modports.pdf](pdf/SystemVerilog_Module_08_Interfaces_and_Modports.pdf) |
 | 9 | Layered Testbench Architecture | not written yet |
 | 10 | Functional Coverage and Assertions | not written yet |
 | 11 | Packages, Advanced Concepts and UVM Introduction | not written yet |
