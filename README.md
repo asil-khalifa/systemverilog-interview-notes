@@ -17,7 +17,7 @@ Detailed study notes for SystemVerilog interviews for VLSI Design Verification r
 | 9 | Layered Testbench Architecture | not written yet |
 | 10 | Functional Coverage and Assertions | not written yet |
 | 11 | Packages, Advanced Concepts and UVM Introduction | not written yet |
-| | Final interview preparation (150+ questions) | not written yet |
+| | Final interview preparation (150+ questions) | [SystemVerilog_Module_12_Final_Interview_Preparation.pdf](pdf/SystemVerilog_Module_12_Final_Interview_Preparation.pdf) |
 
 To download a PDF, open it on GitHub and use the download button at the top right of the viewer.
 
