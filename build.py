@@ -32,10 +32,18 @@ COURSE_SUBTITLE = "Detailed study notes for Design Verification roles"
 
 # module number -> (title, output file name)
 MODULES = {
-    "01": (
-        "SystemVerilog Fundamentals and Data Types",
-        "SystemVerilog_Module_01_Fundamentals_and_Data_Types.pdf",
-    ),
+    "01": ("SystemVerilog Fundamentals and Data Types", "SystemVerilog_Module_01_Fundamentals_and_Data_Types.pdf"),
+    "02": ("Arrays and Array Operations", "SystemVerilog_Module_02_Arrays_and_Array_Operations.pdf"),
+    "03": ("Tasks, Functions and Procedural Concepts", "SystemVerilog_Module_03_Tasks_Functions_Procedural.pdf"),
+    "04": ("Classes and Object-Oriented Programming", "SystemVerilog_Module_04_Classes_and_OOP.pdf"),
+    "05": ("Randomization and Constraints", "SystemVerilog_Module_05_Randomization_and_Constraints.pdf"),
+    "06": ("Transaction Classes and Verification Planning", "SystemVerilog_Module_06_Transactions_and_Verification_Planning.pdf"),
+    "07": ("Inter-Process Communication and Synchronization", "SystemVerilog_Module_07_IPC_and_Synchronization.pdf"),
+    "08": ("Interfaces and Modports", "SystemVerilog_Module_08_Interfaces_and_Modports.pdf"),
+    "09": ("Layered Testbench Architecture", "SystemVerilog_Module_09_Layered_Testbench.pdf"),
+    "10": ("Functional Coverage and Assertions", "SystemVerilog_Module_10_Coverage_and_Assertions.pdf"),
+    "11": ("Packages, Advanced Concepts and UVM Introduction", "SystemVerilog_Module_11_Packages_Advanced_UVM_Intro.pdf"),
+    "12": ("Final Interview Preparation", "SystemVerilog_Module_12_Final_Interview_Preparation.pdf"),
 }
 
 FORMATTER = HtmlFormatter(nowrap=True, style="friendly")
@@ -150,6 +158,9 @@ def make_renderer(example_dir):
         if lang in ("systemverilog", "sv", "verilog"):
             body = highlight(code, get_lexer_by_name("systemverilog"), FORMATTER)
             cls = "lang-systemverilog"
+        elif lang in ("c", "cpp", "bash", "sh", "make", "tcl"):
+            body = highlight(code, get_lexer_by_name(lang), FORMATTER)
+            cls = "lang-systemverilog"
         else:
             body = html.escape(code)
             cls = "lang-output" if lang == "output" else "lang-text"
@@ -213,16 +224,17 @@ def build(num):
     toc_html = "".join(
         f'<li class="l{lvl}"><a href="#{hid}">{name}</a></li>' for lvl, hid, name in toc
     )
-    header = f"{COURSE_TITLE} — Module {int(num)}"
+    label = "Final Section" if num == "12" else f"Module {int(num)}"
+    header = f"{COURSE_TITLE} — {label}"
     page = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
-<title>{COURSE_TITLE} - Module {int(num)}: {title}</title>
+<title>{COURSE_TITLE} - {label}: {title}</title>
 <style>{CSS.replace("__HEADER__", header)}</style></head>
 <body>
 <section class="cover">
   <div class="kicker">VLSI Design Verification</div>
   <div class="title">{COURSE_TITLE}</div>
-  <div class="module">Module {int(num)}: {title}</div>
+  <div class="module">{label}: {title}</div>
   <div class="sub">{COURSE_SUBTITLE}</div>
   <div class="foot">Concepts from first principles &middot; complete SystemVerilog examples &middot;
   line-by-line explanations<br>comparison tables &middot; common mistakes &middot; interview questions with answers
@@ -241,7 +253,9 @@ def build(num):
 
 
 if __name__ == "__main__":
-    wanted = sys.argv[1:] or sorted(MODULES)
+    wanted = sys.argv[1:] or [
+        n for n in sorted(MODULES) if (ROOT / "notes" / f"module-{n}").is_dir()
+    ]
     for n in wanted:
         if n not in MODULES:
             sys.exit(f"unknown module {n!r}; known: {', '.join(sorted(MODULES))}")
